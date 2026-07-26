@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>معاد المافوزي - مصمم CV و خدمات سوشيال ميديا</title>
-  <style>
-    body { font-family: 'Tajawal', sans-serif; background: #f5f5f5; margin: 0; padding: 0; text-align: center; }
-    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; }
-    img { width: 200px; border-radius: 15px; margin: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-    .btn { background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-size: 18px; display: inline-block; margin-top: 20px; }
-    .services { padding: 40px 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاد - خدمات السوشيال ميديا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma; }
+        body { background: #0f172a; color: #fff; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; }
+        header img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #fff; margin-bottom: 20px; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* قسم الخدمات */
+        .services { margin: 60px 0; }
+        .services h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #667eea; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .service-card { background: #1e293b; padding: 30px; border-radius: 15px; text-align: center; transition: 0.3s; border: 1px solid #334155; }
+        .service-card:hover { transform: translateY(-5px); border-color: #667eea; }
+        .service-card i { font-size: 3rem; color: #667eea; margin-bottom: 15px; }
+        .service-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        
+        /* قسم نماذج الأعمال */
+        .portfolio { margin: 60px 0; }
+        .portfolio h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #667eea; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .portfolio-grid img { width: 100%; border-radius: 10px; border: 2px solid #334155; }
+        
+        /* قسم التواصل */
+        .contact { background: #1e293b; padding: 50px 20px; border-radius: 15px; text-align: center; margin: 60px 0; }
+        .contact h2 { font-size: 2rem; margin-bottom: 20px; color: #667eea; }
+        .social-icons { display: flex; justify-content: center; gap: 25px; margin-top: 30px; }
+        .social-icons a { width: 60px; height: 60px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.8rem; text-decoration: none; transition: 0.3s; }
+        .social-icons a:hover { background: #764ba2; transform: scale(1.1); }
+        
+        footer { text-align: center; padding: 30px; background: #0a0f1e; margin-top: 40px; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>معاد المافوزي</h1>
-    <p>مصمم CV احترافي و خدمات سوشيال ميديا</p>
-    <img src="profile.jpeg" alt="الصورة الشخصية">
-  </header>
 
-  <div class="services">
-    <h2>نماذج من أعمالي</h2>
-    <img src="cv1.jpeg" alt="نموذج CV 1">
-    <img src="cv2.jpeg" alt="نموذج CV 2">
-    
-    <h2>تواصل معي</h2>
-    <a href="https://wa.me/212681420669" class="btn">واتساب: 0681 42 06 69</a>
-  </div>
+    <header>
+        <img src="profile.jpeg" alt="معاد">
+        <h1>معاد</h1>
+        <p>متخصص في خدمات السوشيال ميديا و إدارة الصفحات</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- قسم الخدمات -->
+        <section class="services">
+            <h2>الخدمات اللي نقدم</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>إدارة صفحات فيسبوك و انستغرام</h3>
+                    <p>تسيير المحتوى والتفاعل مع الجمهور</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>تصميم بوستات و ستوريات</h3>
+                    <p>تصاميم احترافية تجذب العملاء</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>إعلانات ممولة</h3>
+                    <p>حملات إعلانية توصل للهدف ديالك</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم نماذج الأعمال -->
+        <section class="portfolio">
+            <h2>نماذج من أعمالي</h2>
+            <div class="portfolio-grid">
+                <img src="cv1.jpeg" alt="نموذج عمل 1">
+                <img src="cv2.jpeg" alt="نموذج عمل 2">
+            </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section class="contact">
+            <h2>تواصل معايا</h2>
+            <p>باغي تخدم معايا؟ مرحبا بيك فأي وقت</p>
+            <div class="social-icons">
+                <a href="https://wa.me/2126XXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/USERNAME" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 معاد - جميع الحقوق محفوظة</p>
+    </footer>
+
 </body>
 </html>
