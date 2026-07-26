@@ -4,63 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mafyouzi Creative</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
-        body { background: #0a192f; color: #fff; }
-        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; }
-        .header img { width: 120px; height: 120px; border-radius: 50%; border: 4px solid #fff; margin-bottom: 20px; }
-        .services { padding: 60px 20px; text-align: center; background: #112240; }
-        .services h2 { font-size: 28px; margin-bottom: 40px; color: #64ffda; }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; max-width: 1200px; margin: auto; }
-        .service-card { background: #0a192f; padding: 30px 20px; border-radius: 15px; border: 1px solid #233554; }
-        .contact { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; }
+        body { background: #0f172a; color: #fff; }
+        
+        /* الهيدر الأزرق */
+        .hero {
+            background: linear-gradient(180deg, #1e3a8a 0%, #1e293b 100%);
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+        .hero img {
+            width: 140px; height: 140px; border-radius: 50%;
+            border: 5px solid #3b82f6; margin-bottom: 20px; object-fit: cover;
+        }
+        .hero h1 { font-size: 36px; font-weight: 900; margin-bottom: 10px; }
+        .hero p { font-size: 16px; opacity: 0.8; }
+
+        /* الخدمات */
+        .services {
+            background: #1e293b;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .services h2 { font-size: 28px; color: #22d3ee; margin-bottom: 40px; font-weight: 700; }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .service-card {
+            background: #0f172a;
+            padding: 30px 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        .service-card h3 { color: #22d3ee; margin-bottom: 10px; font-size: 18px; }
+        .service-card p { opacity: 0.8; font-size: 14px; }
+
+        /* تواصل معنا */
+        .contact {
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
         .contact h2 { font-size: 28px; margin-bottom: 10px; }
-        .contact-info { margin: 30px 0; font-size: 16px; }
-        .contact-info a { color: #64ffda; text-decoration: none; display: block; margin: 10px 0; }
-        .social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
-        .social-icons a { width: 60px; height: 60px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 28px; transition: 0.3s; }
-        .social-icons a:hover { transform: scale(1.1); }
-        .footer { background: #020c1b; padding: 20px; text-align: center; font-size: 14px; opacity: 0.7; }
+        .contact p { opacity: 0.8; margin-bottom: 30px; }
+        .social-icons { display: flex; justify-content: center; gap: 20px; }
+        .social-icons a {
+            width: 55px; height: 55px; background: #334155; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            text-decoration: none; font-size: 26px; transition: 0.3s;
+        }
+        .social-icons a:hover { background: #3b82f6; transform: translateY(-3px); }
+        
+        .footer { background: #020617; padding: 20px; text-align: center; font-size: 14px; opacity: 0.6; }
     </style>
 </head>
 <body>
 
-    <section class="header">
-        <img src="https://i.imgur.com/8Km9tLL.png" alt="Logo">
+    <!-- 1. الهيدر فيه تصويرتك -->
+    <section class="hero">
+        <!-- هنا حط التصويرة ديالك -->
+        <img src="YOUR-PHOTO-LINK.jpg" alt="Mafyouzi">
         <h1>Mafyouzi Creative</h1>
-        <p>تصميم مواقع ويب احترافية + إعلانات سينمائية</p>
+        <p>وكالة تصميم مواقع ويب احترافية + إعلانات سينمائية</p>
     </section>
 
+    <!-- 2. الخدمات بحال اللي فالتصويرة -->
     <section class="services">
         <h2>الخدمات ديالنا</h2>
         <div class="service-grid">
-            <div class="service-card"><h3>🌐 تصميم مواقع Web</h3><p>مواقع احترافية 100% متجاوبة</p></div>
-            <div class="service-card"><h3>🎬 إعلانات فيديو</h3><p>إعلانات بالـ AI بحال اللي صايبنا</p></div>
-            <div class="service-card"><h3>📱 سوشيال ميديا</h3><p>إدارة الصفحات والمحتوى</p></div>
+            <div class="service-card">
+                <h3>تصميم مواقع Web</h3>
+                <p>مواقع احترافية 100% متجاوبة مع جميع الأجهزة</p>
+            </div>
+            <div class="service-card">
+                <h3>إعلانات فيديو</h3>
+                <p>إعلانات سينمائية بالـ AI لجذب العملاء ديالك</p>
+            </div>
+            <div class="service-card">
+                <h3>إدارة سوشيال ميديا</h3>
+                <p>محتوى احترافي وزيادة المتابعين والمبيعات</p>
+            </div>
         </div>
     </section>
 
+    <!-- 3. تواصل معنا فيه كلشي كليك -->
     <section class="contact">
         <h2>تواصل معنا</h2>
-        <p>ضغط على أي حاجة بغيتيها وغادي تطلع ليك</p>
-        
-        <!-- معلومات كليكابل -->
-        <div class="contact-info">
-            <a href="tel:+212681420669">📞 0681 420 669</a>
-            <a href="mailto:mafyouzime@gmail.com">📧 mafyouzime@gmail.com</a>
-        </div>
-
-        <!-- الأزرار كليكابل -->
+        <p>كنا رهن الإشارة ديالك فأي وقت</p>
         <div class="social-icons">
             <!-- الواتساب -->
             <a href="https://wa.me/212681420669" target="_blank" title="WhatsApp" style="color: #25D366;">💬</a>
-            
             <!-- الانستغرام ديالك -->
             <a href="https://www.instagram.com/mafyouzi_creative/" target="_blank" title="Instagram" style="color: #E1306C;">📸</a>
-            
             <!-- الجيمايل -->
-            <a href="mailto:mafyouzime@gmail.com" title="Gmail" style="color: #EA4335;">📧</a>
+            <a href="mailto:mafyouzime@gmail.com" title="Gmail" style="color: #EA4335;">✉️</a>
         </div>
     </section>
 
